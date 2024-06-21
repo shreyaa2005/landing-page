@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="lstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap" />
+    <link rel="icon" href="https://i.ibb.co/ns70mNX/skillify-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+            body {
+            background: linear-gradient(to right,  rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95)), 
+            url('https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/35106/woman-laptop-computer-clipart-md.png') no-repeat center center fixed;
+            background-position: right;
+            background-size: contain;
+            font-family: 'Montserrat', sans-serif; 
+            color: black;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background: transparent;
+        }
+
+        
+
+        li, a, button {
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFF;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 0px 40px;
+        }
+
+        nav ul li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+            transition: all 0.3s ease 0s;
+        }
+
+        header > button {
+            padding: 9px 25px;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            background-color: #90EE90;
+        }
+
+        header > button:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+
+
+ 
+        .content {
+            display: flex;
+            padding: 80px 10%;
+            justify-content: space-between;
+            color: #FFF;
+        }
+
+        .hero-info h1 {
+            font-size: 40px;
+        }
+
+        .hero-info p {
+            margin: 30px 0;
+            font-weight: 400;
+            line-height: 2;
+        }
+
+        .locale {
+            animation-name: colorChange;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .btn-outline {
+            border-radius: 30px;
+            color: #ffffff;
+            border-color: #ffffff;
+            padding: 12px 30px;
+            font-weight: 700;
+            cursor: pointer;
+            outline: #FF0000;
+        }
+
+        .btn-outline:hover {
+            background: #ffffff;
+            color: #6730e3;
+        }
+
+        i.fa {
+            margin-right: 10px;
+        }
+
+        .social-links {
+            padding: 10px;
+            margin-top: 200px;
+        }
+
+        .social-links ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-social {
+            padding: 9px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn-outline {
+            background-color: #FF0000;
+        }
+
+        .bg-facebook {
+            background-color: #4267B2;
+        }
+
+        .bg-facebook:hover {
+            background: #ffffff;
+            color: #6730e3;
+        }
+
+        .bg-youtube {
+            background-color: #FF0000;
+        }
+
+        .bg-youtube:hover {
+            background: #ffffff;
+            color: #6730e3;
+        }
+
+        .bg-instagram {
+            background-color: #C13584;
+        }
+
+        .bg-instagram:hover {
+            background: #ffffff;
+            color: #6730e3;
+        }
+
+        .m-50 {
+            margin: 50px;
+        }
+
+        .py-100 {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .hero-info {
+            padding-bottom: 20px;
+        }
+
+        .hero-info p {
+            margin-top: -25px;
+        }
+
+        .social-links {
+            margin-top: 40px;
+        }
+
+        .fac {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            color: #f2f2f2;
+        }
+
+        .fac img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        .fac p {
+            max-width: 600px;
+        }
+        .sch {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            color: #f2f2f2;
+        }
+
+        .sch img {
+            max-width: 150px;
+            margin-left: 20px;
+        }
+
+        .sch p {
+            max-width: 600px;
+        }
+         .net {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            color: #f2f2f2;
+        }
+
+        .net img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        .net p {
+            max-width: 600px;
+        }
+
+
+        .abc {
+            width: 250px;
+            height: 250px;
+            margin-left:20px; 
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <img class="abc" src="https://i.ibb.co/ns70mNX/skillify-removebg-preview.png" alt="Faculty Image">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+            <a class="btn-contact" href="https://mail.google.com/mail/?view=cm&fs=1&to=skillifyy@gmail.com" target="_blank">
+                <i class="fa fa-envelope-o"></i> Contact Us
+            </a>
+        </header>
+        <div class="content py-100">
+            <div class="hero-info m-50" style="flex-basis: 640px;">
+                <p>-> COURSE CATALOG</p>
+                <p>-> QUIZZES </p>
+                <p>-> ASSIGNMENTS</p>
+                <p>-> CERTIFICATION UPON COURSE COMPLETION</p>
+                <p>-> SEASONED INSTRUCTORS</p>
+                <a class="btn btn-outline" href="log.html" target="_blank">
+                    <i class="fa fa-video-camera"></i>Get Started
+                </a>
+                
+                <div class="fac">
+                    <img src="https://icon-library.com/images/faculty-icon/faculty-icon-18.jpg" alt="Faculty Image">
+                    <p>Our experienced management team, renowned for their strategic vision and leadership, works hand-in-hand with our esteemed faculty, comprising industry veterans and academic scholars. Together, they bring an immense wealth of knowledge, practical expertise, and innovative teaching methods, ensuring an exceptional and comprehensive educational experience that prepares our students for real-world challenges and career success.</p>
+                </div>
+                <div class="sch">
+                    
+                    <p>Our experienced management team, renowned for their strategic vision and leadership, works hand-in-hand with our esteemed faculty, comprising industry veterans and academic scholars. Together, they bring an immense wealth of knowledge, practical expertise, and innovative teaching methods, ensuring an exceptional and comprehensive educational experience that prepares our students for real-world challenges and career success.</p>
+                    <img src="https://www.pngmart.com/files/8/Schedule-Transparent-Images-PNG.png" alt="tt">
+                </div>
+                <div class="net">
+                    <img src="https://icon-library.com/images/networking-icon-png/networking-icon-png-14.jpg" alt="network">
+                    <p>Expand your professional network by connecting with individuals globally, opening doors to a wealth of opportunities and perspectives. By fostering meaningful relationships across borders, you gain access to diverse insights, collaborative ventures, and experiences that enrich your career journey. Building a global network not only broadens your horizons but also enhances your ability to navigate the complexities of today's interconnected world, positioning you for success in diverse contexts and industries.</p>
+                    
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/login" target="_blank" class="btn-social bg-facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@skillify-xv6zn" target="_blank" class="btn-social bg-youtube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank" class="btn-social bg-instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
